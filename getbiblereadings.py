@@ -1,6 +1,7 @@
 import urllib 
 import time
 # I discovered this in firefox by hitting F12 and selecting the network tab while playing the audio
+# Big thanks to the staff at Listenersbible.
 baseurl = "http://www.listenersbible.com/sites/default/files/assets/audio/"
 getfile = "Day_"
 postfix = ".mp3"
