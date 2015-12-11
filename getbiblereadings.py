@@ -9,7 +9,7 @@ mylist = []
 r = 365
 
 for x in range (r):
-	y=x+1
+	y=x+1 # This is to offset the counter of the list
 	mylist.insert(x,baseurl + getfile + str(y).zfill(3) + postfix)
 	print mylist[x] # This is for me to see the script in action
 	urllib.urlretrieve(mylist[x], getfile+str(y).zfill(3)+postfix)
