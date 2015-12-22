@@ -11,9 +11,6 @@ prefix = "Day_"
 postfix= ".mp3"
 url = base_url + prefix + str(day_of_year) + postfix
 
-
-# url = "http://download.thinkbroadband.com/10MB.zip"
-
 file_name = url.split('/')[-1]
 u = urllib2.urlopen(url)
 f = open(file_name, 'wb')
