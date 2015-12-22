@@ -1,5 +1,6 @@
 #This file just downloads one file a day
-#Thaks to this site: http://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
+#Thanks to this site: http://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python || for download routine
+#Thanks to this site: http://www.epochconverter.com/epoch/daynumbers.php || for date format
 import urllib2
 
 from datetime import datetime
