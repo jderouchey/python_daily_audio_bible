@@ -3,16 +3,15 @@ import urllib3
 import os
 from bs4 import BeautifulSoup
 from datetime import datetime
-
 #Function
 def gethttp_data(base_url,filename):
     c = urllib3.PoolManager()
     with c.request('GET',base_url+filename, preload_content=False) as resp, open(filename, 'wb') as out_file:
         shutil.copyfileobj(resp, out_file)
 
-day_of_year = datetime.now().timetuple().tm_yday
+day_of_year = str(datetime.now().timetuple().tm_yday).zfill(3)
 
-print ("Today is the %s of the year" % day_of_year)
+print ("Today is day %s of the year" % day_of_year)
 
 base_url = "http://www.listenersbible.com/sites/default/files/assets/audio/"
 prefix = "Day_"
